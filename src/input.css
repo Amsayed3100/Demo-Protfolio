@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+
+
+@variants hover,focus{
+   .u-underline{
+    position: relative;
+    }
+
+   .u-underline::after{
+  content:"";
+  position: absolute;
+  left:0;
+  bottom:-2px;
+  width:0;
+  height:2px;
+  background:currentcolor;
+  transition:width 0.2s ease;
+  }
+
+  .u-underline::after,
+  .u-underline::after{
+    width:100%;
+  }
+  
+}   
